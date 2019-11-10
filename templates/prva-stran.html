@@ -1,0 +1,26 @@
+{% extends "osnova.html" %}
+
+{% block vsebina %}
+
+<h1>Pozdravljeni...</h1>
+
+<p><a href="bogle">Bogle</a></p>
+<p><a href="fakebook">Fakebook</a></p>
+<p><a href="frizer">Stilas</a></p>
+
+<br>
+
+<hr color="grey">
+
+<br>
+
+<p><strong>Če želiš lahko spodaj pošlješ svoj komentar:</strong></p>
+<form method="post" action="/odgovor">
+    <p>Uporabnik: <input name="ime"></p>
+    <p>Sporočilo: <input name="sporocilo"></p>
+    <p><button type="submit">Pošlji</button></p>
+</form>
+
+<br>
+
+{% endblock %}

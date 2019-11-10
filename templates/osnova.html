@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prva stran</title>
+    <link rel="stylesheet" href="/static/stil.css">
+
+    <style>
+        #glava {
+            background-color: orange;
+        }
+        #noga {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="glava">
+        <a href="/">Prva stran</a>
+        |
+        <a href="/bogle">Bogle</a>
+        |
+        <a href="/fakebook">Fakebook</a>
+        |
+        <a href="/frizer">Stilas</a>
+    </div>
+
+    {% block vsebina %}
+    {% endblock %}
+
+    <div id="noga"> To je noga</div>
+
+</body>
+</html>

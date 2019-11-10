@@ -1,0 +1,274 @@
+{% extends "osnova.html" %}
+
+{% block vsebina %}
+
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">STILAS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item">
+                <a class="nav-link" href="#storitve">Storitve</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#rezervacija">Rezervacija</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#podatki">Podatki</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#about" data-toggle="modal" data-target="#kdo">Kdo smo</a>
+            </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<!-- END Navigation bar -->
+
+<!-- Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="10000">
+            <img src="https://storage.googleapis.com/smartninja-org-assets/curriculums/wd1/img/hairsalon-slider-1.jpg"
+                 class="d-block w-100" alt="Prva predstavitev">
+
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Stiliranje</h5>
+                <p><i>klasična francoska kita</i></p>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-interval="5000">
+            <img src="https://storage.googleapis.com/smartninja-org-assets/curriculums/wd1/img/hairsalon-slider-2.jpg"
+                 class="d-block w-100" alt="Druga predstavitev">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Nega lasišča</h5>
+                <p><i>proti prhljaju in izpadanju las</i></p>
+            </div>
+        </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- END Carousel -->
+
+<!-- Storitve -->
+<div class="container mt-4" id="storitve">
+    <h2 class="text-center">Storitve</h2>
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                        Barvanje
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                    3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                    laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                    nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                    nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore
+                    sustainable VHS.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Striženje
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Sušenje
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                    labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- END Storitve -->
+
+<br>
+
+<!-- Rezervacija -->
+<div class="container mt-5" id="rezervacija">
+    <h2 class="text-center">Rezervacija</h2>
+    <br>
+
+    <div class="row">
+        <div class="col-md-5 offset-md-1 form-group">
+            <input type="text" class="form-control" placeholder="Ime in priimek">
+
+            <input type="text" class="form-control mt-2" placeholder="Telefon">
+
+            <input type="text" class="form-control mt-2" placeholder="Datum">
+
+            <textarea class="form-control mt-2" placeholder="Sporočilo" rows="5"></textarea>
+
+            <input type="checkbox" class="mt-3"> Strinjam se, da je to najboljši frizerski salon :) <br>
+
+            <button class="btn btn-success center-block mt-3">Pošlji</button>
+        </div>
+
+        <div class="col-md-5 offset-md-1">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">URNIK</th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Ponedeljek</th>
+                    <td align="center">13:00 - 20:00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Torek</th>
+                    <td align="center">9:00 - 13:00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Sreda</th>
+                    <td align="center">9:00 - 17:00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Četrtek</th>
+                    <td align="center">15:00 - 21:00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Petek</th>
+                    <td align="center">9:00 - 13:00</td>
+                </tr>
+
+                </tbody>
+            </table>
+            <p align="center"><i>* Sobota samo po predhodnem naročilu! </i></p>
+        </div>
+    </div>
+</div>
+
+<!-- END Rezervacija -->
+
+<!-- Naslov -->
+<div class="container mt-4" id="podatki">
+    <h2 class="text-center">Podatki</h2>
+    <br>
+    <p align="center"><b>STILAS</b> - Družinski frizerski salon  |  <b>Naslov:</b> Frizerska 55, 1000 Ljubljana
+         |<b>  Telefon:
+        </b> 01/555 555 555  |  <b>Email:</b> info@stilas.com</p>
+    <br>
+</div>
+<!-- END Naslov -->
+
+<!-- Small modal -->
+<div class="modal fade" id="kdo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color:#f0f0f2">
+                <h5 class="modal-title" id="exampleModalCenterTitle">STILAS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" align="center">
+                <p style="color:blue">TO SMO MI</p>
+                <br>
+                <img width="" class="img-fluid"
+                     src="https://upload.wikimedia.org/wikipedia/en/4/40/Peanuts_gang.png"
+                     alt="gasilska slika">
+                <br> <br>
+                <p style="color:blue">Družinsko podjetje vam na razpolago. </p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zapri</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END Small modal     -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+{% endblock %}
