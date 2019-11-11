@@ -14,15 +14,15 @@ def odgovor():
 
 @app.route("/bogle")
 def bogle():
-    return render_template("bogle.html")
+    return render_template("Bogle.html")
 
 @app.route("/fakebook")
 def fakebook():
-    return render_template("fakebook.html")
+    return render_template("Fakebook.html")
 
 @app.route("/frizer")
 def frizer():
-    return render_template("frizer.html")
+    return render_template("Frizer.html")
 
 if __name__ == '__main__':
     app.run()
